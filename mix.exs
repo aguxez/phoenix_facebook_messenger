@@ -40,7 +40,7 @@ defmodule FacebookMessenger.Phoenix.Mixfile do
      {:facebook_messenger, "~> 0.4.0"},
      {:inch_ex, only: :docs},
      {:ex_doc, "~> 0.7", only: :dev},
-     {:earmark, "~> 0.1", only: :docs}]
+     {:earmark, "~> 1.1", only: :docs}]
 
      if Mix.env == :test do
       [{:coverex, "~> 1.4.8", only: :test}, {:poison, "~> 2.1.0", override: true} | d]

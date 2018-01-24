@@ -12,13 +12,5 @@ case Mix.env do
       facebook_page_token: "PAGE_TOKEN",
       challenge_verification_token: "123123",
       responder: FacebookMessenger.Responder.Mock
-
-  :dev ->
-    config :facebook_messenger,
-      request_manager: FacebookMessenger.RequestManager,
-      facebook_page_token: "PAGE_TOKEN",
-      challenge_verification_token: "123123",
-      responder: FacebookMessenger.Responder
-
   _ -> true
 end
